@@ -77,9 +77,10 @@ header nav a:hover {
 
 .hero-banner h2 {
   padding: 15px;
-  border: 1px solid red;
-  color: #0000FF;
+  border: 1px solid white;
+  color: rgb(224,224,224);
   position: absolute;
+  font-size:100%;
   right: var(--marginRight);
   bottom: 20px;
   border-radius: 10px;
