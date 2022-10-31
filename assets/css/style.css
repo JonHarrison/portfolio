@@ -112,6 +112,19 @@ main .page-section div p {
   padding: 0px;
 }
 
+#about::after {
+  position: absolute;
+  background-image: url("../images/1043077.png");
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  bottom: 5px;
+  left: 40px;
+  content: "";
+}
+
 
 main .about-me p {
   text-align:left;
