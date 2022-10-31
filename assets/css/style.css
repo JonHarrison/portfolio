@@ -250,10 +250,13 @@ main .contact ul {
 /* icons for contact */
 
 a[href]::before {
+  position: relative;
   width: 48px;
   height: 48px;
   display: inline-block;
   margin-right: 5px;
+  top: 12px;
+  left: 0;
 }
 
 a[href*='tel:']::before {
