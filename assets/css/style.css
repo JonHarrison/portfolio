@@ -226,6 +226,31 @@ main .contact ul {
   /* align-content: center; */
 }
 
+/* icons for contact */
+
+a[href]::before {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+a[href*='tel:']::before {
+  content: url("../icons/phone-call-svgrepo-com.svg") / "Telephone icon";
+}
+
+a[href*='mailto:']::before {
+  content: url("../icons/envelope-svgrepo-com.svg") / "Email icon";
+}
+
+a[href*='github']::before {
+  content: url("../icons/icons8-github.svg") / "GitHub logo";
+}
+
+a[href*='linkedin']::before {
+  content: url("../icons/icons8-linkedin.svg") / "Linkedin logo";
+}
+
 /* footer */
 
 footer p {
