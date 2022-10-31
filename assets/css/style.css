@@ -162,6 +162,12 @@ main .portfolio-grid-area {
   display: grid;
   align-content: end;
   position: relative;
+
+main .portfolio-grid-area:hover {
+  /* margin: 10px; */
+  border-radius: 10px;
+  border-style: groove;
+  border-color: red;
 }
 
 
