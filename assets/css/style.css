@@ -274,7 +274,7 @@ a[href*='linkedin']::before {
 
 /* footer */
 
-footer p {
+footer h4 {
   text-align: center;
 }
 
