@@ -73,30 +73,30 @@
         <a class="portfolio-grid-area" id="portfolio1" href="https://jonharrison.github.io/horiseon-website-refactor/">
           <div class="heading">
             <h3>Horiseon Website Refactor</h3>
-            <h4>HTML / CSS</h4>
+            <h4 class="project-languages">HTML / CSS</h4>
           </div>
         </a>
         <section class="portfolio-grid-area" id="portfolio2" href="#">
           <div class="heading">
             <h3>LED Wall</h3>
-            <h4>Node / IoT</h4>
+            <h4 class="project-languages">Node / IoT</h4>
           </div>
         </section>
         <section class="portfolio-grid-area" id="portfolio3" href="#">
           <div class="heading">
             <h3>Calculator</h3>
-            <h4>React / Javascript / CSS</h4>
+            <h4 class="project-languages">React / Javascript / CSS</h4>
         </section>
         <section class="portfolio-grid-area" id="portfolio4" href="#">
           <div class="heading">
             <h3>Pastel Puzzles</h3>
-            <h4>MERN Stack</h4>
+            <h4 class="project-languages">MERN Stack</h4>
           </div>
         </section>
         <section class="portfolio-grid-area" id="portfolio5" href="#">
           <div class="heading">
             <h3>Run Buddy</h3>
-            <H4>HTML / CSS</H4>
+            <h4 class="project-languages">HTML / CSS</h4>
           </div>
         </section>
       </div>
@@ -125,5 +125,59 @@
   </footer>
 
 </body>
+
+<script>
+
+  // add individual language icons to project text as required
+  attachIconsToProjectLanguages();
+
+  // take elements with the project-languages class and then match the inner text against the id in the icons array and appends an img list to the element
+  function attachIconsToProjectLanguages() {
+
+    // list of language images for portfolio
+    var icons = [
+      { "img": "./assets/icons/react_32x32.png", "id": "REACT", "tag": "REACT", "alt": "React icon" },
+      { "img": "./assets/icons/javascript_32x32.png", "id": "JAVASCRIPT", "tag": "JS", "alt": "Javascript icon" },
+      { "img": "./assets/icons/html5_32x32.png", "id": "HTML", "tag": "HTML", "alt": "HTML icon" },
+      { "img": "./assets/icons/css_32x32.png", "id": "CSS", "tag": "CSS", "alt": "CSS icon" }
+    ];
+
+    var separator = '/'; // the seperator used in the element
+
+    // get project-languages elements from html
+    var list = document.getElementsByClassName('project-languages');
+
+    for (let item of list) {
+
+      var attribute = item.textContent; // this will be the text in the element
+      var keywords = attribute.split(separator); // split this text into a keywords list using the separator used in the element
+
+      for (let keyword of keywords) {
+
+        for (let icon of icons) {
+
+          // trim off space from the keyword and then make everything the same (upper) case to compare
+          if (keyword.trim().toLocaleUpperCase() === icon.id) {
+
+            var img = document.createElement('img');
+            
+            // populate the img element
+            img.src = icon.img; // the icon URL.
+            img.tagName = icon.tag; // tag is a friendly name for the image
+            img.alt = icon.alt; // alt text
+
+            item.appendChild(img); // add img to html
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+</script>
 
 </html>
