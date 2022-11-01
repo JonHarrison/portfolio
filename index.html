@@ -5,41 +5,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <meta name="description" content="Jon Harrison, front-end web developer" />
+  <meta name="keywords" content="Jon Harrison, front-end, web, developer, html, css, javascript, git" />
+  <meta name="robots" content="follow, index" />
+  <title>Jon Harrison // Web Developer</title>
+  <link rel="icon" href="./assets/icons/pngkit_tablet-icon-png_3332577.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
+
   <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
+  <header class="header">
+  
+    <h1 class="title">Jon Harrison</h1>
+  
+    <!-- navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="#about">About Me</a></li>
+        <li><a class="navbar-link" href="#work">Work</a></li>
+        <li><a class="navbar-link" href="#contact">Contact Me</a></li>
+        <li><a class="navbar-link" href="./assets/files/CV.pdf" target="_blank">Resume</a></li>
+      </ul>
     </nav>
+  
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <section class="hero-banner" role="img" aria-label="Screenshot showing web script"
+    alt="Screenshot showing web script">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h3 class="hero-banner-subtitle">Front-end web developer!</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
+
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <div class="left-panel">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="right-panel about-me">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit id tortor id dignissim. Vestibulum tempor
+          enim nisi, ut euismod quam sagittis ut. Cras eu ante sed leo semper convallis. Quisque ornare consequat dolor
+          eget efficitur. Vivamus laoreet ex condimentum est imperdiet mollis. Duis fermentum pellentesque neque, in
+          tincidunt lacus euismod eu. Nam eget euismod mauris. Morbi tincidunt porta massa ac semper. Proin vitae dui
+          accumsan, dictum turpis dictum, blandit nisi. Donec suscipit turpis sed posuere finibus.
+        </p>
+        <br>
+        <p>
+          Curabitur et ante non velit suscipit consequat non nec lacus. Nullam sagittis, diam laoreet sollicitudin
+          egestas, ante nulla tempor arcu, in dictum est nisi sed justo. Fusce lacinia laoreet felis, eu tincidunt ipsum
+          auctor nec. Ut egestas, nulla vel efficitur vehicula, libero tellus dictum mauris, quis sodales nulla risus a
+          nunc. Morbi vel luctus purus, ac feugiat ex. Aliquam quam turpis, pretium vel interdum vitae, pellentesque
+          eget erat. Aliquam fermentum quam in ex aliquam porta. Donec hendrerit dapibus malesuada. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; Sed vestibulum scelerisque turpis, a pharetra magna
+          venenatis at. Quisque eu congue libero. Suspendisse sagittis tempus scelerisque. Nam volutpat mollis lectus,
+          gravida dignissim lectus suscipit eu.
+        </p>
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <div class="left-panel">
+        <h2 class="section-title">Work</h2>
+      </div>
+      <div class="right-panel portfolio-grid">
+        <a class="portfolio-grid-area" id="portfolio1" href="https://jonharrison.github.io/horiseon-website-refactor/">
+          <div class="project-info-card">
+            <h3>Horiseon Website Refactor</h3>
+            <h4 class="project-languages">HTML / CSS</h4>
+          </div>
+        </a>
+        <a class="portfolio-grid-area" id="portfolio2" href="#">
+          <div class="project-info-card">
+            <h3>LED Wall</h3>
+            <h4 class="project-languages">Node / IoT</h4>
+          </div>
+        </a>
+        <a class="portfolio-grid-area" id="portfolio3" href="#">
+          <div class="project-info-card">
+            <h3>Calculator</h3>
+            <h4 class="project-languages">React / Javascript / CSS</h4>
+          </div>
+        </a>
+        <a class="portfolio-grid-area" id="portfolio4" href="#">
+          <div class="project-info-card">
+            <h3>Pastel Puzzles</h3>
+            <h4 class="project-languages">MERN Stack</h4>
+          </div>
+        </a>
+        <a class="portfolio-grid-area" id="portfolio5" href="#">
+          <div class="project-info-card">
+            <h3>Run Buddy</h3>
+            <h4 class="project-languages">HTML / CSS</h4>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <div class="left-panel">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="right-panel">
+        <ul class="contact-list">
+          <li><a href="tel:+123456789">Phone me</a></li>
+          <li><a href="mailto:someone@me.com">Email me</a></li>
+          <li><a href="https://github.com/" target="_blank">Find me on GitHub</a></li>
+          <li><a href="https://uk.linkedin.com/" target="_blank">Find me on Linkedin</a></li>
+        </ul>
+      </div>
     </section>
+
   </main>
+
+  <footer>
+    <h4 class="footer-copyright">Copyright &copy;
+      <script>document.write(new Date().getFullYear())</script>. All rights reserved.
+    </h4>
+  </footer>
+
 </body>
+
+<script>
+
+  // add individual language icons to project text as required
+  attachIconsToProjectLanguages();
+
+  // take elements with the project-languages class and then match the inner text against the id in the icons array and appends an img list to the element
+  function attachIconsToProjectLanguages() {
+
+    // list of language images for portfolio
+    var icons = [
+      { "img": "./assets/icons/react_32x32.png", "id": "REACT", "tag": "REACT", "alt": "React icon" },
+      { "img": "./assets/icons/javascript_32x32.png", "id": "JAVASCRIPT", "tag": "JS", "alt": "Javascript icon" },
+      { "img": "./assets/icons/html5_32x32.png", "id": "HTML", "tag": "HTML", "alt": "HTML icon" },
+      { "img": "./assets/icons/css_32x32.png", "id": "CSS", "tag": "CSS", "alt": "CSS icon" }
+    ];
+
+    var separator = '/'; // the seperator used in the element
+
+    // get project-languages elements from html
+    var list = document.getElementsByClassName('project-languages');
+
+    for (let item of list) {
+
+      var attribute = item.textContent; // this will be the text in the element
+      var keywords = attribute.split(separator); // split this text into a keywords list using the separator used in the element
+
+      for (let keyword of keywords) {
+
+        for (let icon of icons) {
+
+          // trim off space from the keyword and then make everything the same (upper) case to compare
+          if (keyword.trim().toLocaleUpperCase() === icon.id) {
+
+            var img = document.createElement('img');
+            
+            // populate the img element
+            img.src = icon.img; // the icon URL.
+            img.tagName = icon.tag; // tag is a friendly name for the image
+            img.alt = icon.alt; // alt text
+
+            item.appendChild(img); // add img to html
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+</script>
 
 </html>
