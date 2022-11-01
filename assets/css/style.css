@@ -95,7 +95,7 @@ p {
   justify-content: center;
 }
 
-/* profile picture */
+/* show profile picture before title */
 .header .title::before {
   position: relative;
   background-image: url("../images/1043077.png");
@@ -125,6 +125,7 @@ p {
   margin: 10px;
 }
 
+/* add hover over effect to navbar link */
 .header .navbar .navbar-link:hover {
   color: var(--navHoverForeground);
   background-color: var(--navHoverBackground);
@@ -143,7 +144,7 @@ p {
   position: relative;
 }
 
-/* subtitle */
+/* banner subtitle */
 .hero-banner .hero-banner-subtitle {
   padding: 15px;
   border: 1px solid white;
@@ -170,11 +171,7 @@ main .page-section {
   position: relative;
 }
 
-main .page-section div p {
-  padding: 0px;
-}
-
-main .about-me p {
+main .page-section .about-me {
   text-align: left;
   line-height: 1.25;
 }
