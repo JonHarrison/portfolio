@@ -31,10 +31,11 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Challenges / Things I learnt
 
-* How to layout a web page using grid and flexgrid
+* How to layout a responsive web page using grid and flexgrid
 * How to alter grid layouts for responsive web design
 * Wrote JS for updating copyright for current year
-* Wrote JS for appending language icons as CSS could only add a single icon
+* Wrote JS for appending language icons as CSS could only add a single icon in ::after
+* Good time management is essential
 
 ## Wireframe image
 
