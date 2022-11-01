@@ -185,7 +185,7 @@ main .portfolio-grid-area:hover {
 }
 
 
-main .portfolio-grid-area .heading {
+main .portfolio-grid-area .project-info-card {
   position: absolute;
   left: 20px;
   bottom: 20px;
