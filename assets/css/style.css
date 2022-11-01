@@ -328,6 +328,10 @@ footer .footer-copyright {
   header ul {
     flex-direction: column;
   }
+  .hero-banner {
+    /* use lower resolution image */
+    background-image: url("../images/pexels-markus-spiske-1089440_768x512.jpg");
+  }  
   main .portfolio-grid {
     flex: 0 0 75%;
     max-width: 75%;
