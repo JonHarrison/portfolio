@@ -43,6 +43,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 ## Website image
 
+![Website image](https://user-images.githubusercontent.com/1043077/199357546-7fb9e37b-b51e-4bd5-b446-2efbd3a1d832.png)
 
 ## Technologies Used
 
