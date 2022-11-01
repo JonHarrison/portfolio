@@ -272,7 +272,7 @@ main .contact {
   justify-content: center;
 }
 
-main .contact ul {
+main .contact .contact-list {
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -282,7 +282,7 @@ main .contact ul {
   align-items: center;
 }
 
-/* icons for contact */
+/* add icons before contact item */
 
 .contact a[href]::before {
   position: relative;
