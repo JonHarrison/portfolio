@@ -107,7 +107,7 @@ header nav a:hover {
 }
 
 /* subtitle */
-.hero-banner h2 {
+.hero-banner .hero-banner-subtitle {
   padding: 15px;
   border: 1px solid white;
   color: var(--bannerSubtitleForeground);
@@ -169,7 +169,7 @@ main .left-panel {
   margin: 0px;
 }
 
-main .left-panel h2 {
+main .left-panel .section-title {
   font-size: 30px;
   text-align: right;
 }
