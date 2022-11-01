@@ -115,6 +115,7 @@ p {
 .header .navbar .navbar-list {
   display: flex;
   justify-content: space-between;
+  min-width: 500px;
 }
 
 .header .navbar .navbar-link {
