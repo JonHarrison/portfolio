@@ -313,7 +313,11 @@ main .contact .contact-list {
 
 /* footer */
 
-footer h4 {
+footer {
+  margin-top: 20px;
+}
+
+footer .footer-copyright {
   text-align: center;
 }
 
