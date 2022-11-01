@@ -79,7 +79,7 @@ p {
 
 /* header */
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   /* make full width */
@@ -89,14 +89,14 @@ header {
   color: var(--headerForeground);
 }
 
-header h1 {
+.header .title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* profile picture */
-header h1::before {
+.header .title::before {
   position: relative;
   background-image: url("../images/1043077.png");
   background-size: 64px 64px;
@@ -108,11 +108,16 @@ header h1::before {
   content: "";
 }
 
-header nav {
+.header .navbar {
   margin-right: var(--marginRight);
 }
 
-header nav a {
+.header .navbar .navbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .navbar .navbar-link {
   color: var(--navForeground);
   font-weight: bold;
   text-decoration: none;
@@ -120,16 +125,11 @@ header nav a {
   margin: 10px;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-
 header nav ul li {
   /* nothing here yet */
 }
 
-header nav a:hover {
+.header .navbar .navbar-link:hover {
   color: var(--navHoverForeground);
   background-color: var(--navHoverBackground);
   border-radius: 10px;
