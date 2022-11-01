@@ -352,7 +352,7 @@ footer .footer-copyright {
   header ul,
   main .page-section,
   main .contact ul {
-    flex-direction: column !important;
+    flex-direction: column;
   }
 
   main .page-section {
@@ -360,14 +360,13 @@ footer .footer-copyright {
   }
 
   main .portfolio-grid {
-    grid-template-rows: repeat(5, 300px) !important;
-    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-columns: 1fr;
     grid-template-areas: "portfolio1"
       "portfolio2"
       "portfolio3"
       "portfolio4"
-      "portfolio5"
-      !important;
+      "portfolio5";
   }
 
   /* center the left panel (About/Work/Contact) and remove the right border */
