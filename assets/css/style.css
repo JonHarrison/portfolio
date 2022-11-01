@@ -125,10 +125,6 @@ p {
   margin: 10px;
 }
 
-header nav ul li {
-  /* nothing here yet */
-}
-
 .header .navbar .navbar-link:hover {
   color: var(--navHoverForeground);
   background-color: var(--navHoverBackground);
@@ -161,17 +157,9 @@ header nav ul li {
 
 /* main area */
 
-main {
-  /*nothing here yet */
-}
-
 main .page-wrapper {
   display: flex;
   align-items: stretch;
-}
-
-main .page-section:first-child {
-  /* nothing here yet */
 }
 
 main .page-section {
@@ -184,14 +172,6 @@ main .page-section {
 
 main .page-section div p {
   padding: 0px;
-}
-
-main .page-section h2 {
-  /* nothing here yet */
-}
-
-main .about-me {
-  /* nothing here yet */
 }
 
 main .about-me p {
@@ -221,22 +201,6 @@ main .right-panel {
   /* flex-grow: 1; */
 }
 
-main .flex {
-  /* nothing here yet */
-}
-
-main .flex_item :first-child {
-  /* nothing here yet */
-}
-
-main .page-section>* {
-  /* nothing here yet */
-}
-
-main .row {
-  /* nothing here yet */
-}
-
 main .portfolio-grid {
   display: grid;
   grid-template-rows: repeat(4, 300px);
@@ -264,28 +228,12 @@ main .portfolio-grid-area:hover {
   border-color: red;
 }
 
-main .portfolio-grid-area:nth-child(1) {
-  /* nothing here yet */
-}
-
 main .portfolio-grid-area .project-info-card {
   position: absolute;
   left: 20px;
   bottom: 20px;
   background-color: var(--portfolioCardBackground);
   padding: 5px;
-}
-
-main .page-section #work {
-  /* nothing here yet */
-}
-
-main #portfolio1,
-#portfolio2,
-#portfolio3,
-#portfolio4,
-#portfolio5 {
-  /* nothing here yet */
 }
 
 /* attach project portfolio background images */
