@@ -325,23 +325,26 @@ footer .footer-copyright {
 
 /* Tablets */
 @media only screen and (max-width: 768px) {
-  header ul {
+ 
+  header ul,
+  main .contact .contact-list {
     flex-direction: column;
   }
+ 
   .hero-banner {
     /* use lower resolution image */
     background-image: url("../images/pexels-markus-spiske-1089440_768x512.jpg");
   }  
+ 
   main .portfolio-grid {
     flex: 0 0 75%;
     max-width: 75%;
   }
+ 
   main .portfolio-grid:first-child {
     flex-grow: 1;
   }
-  main .contact ul {
-    flex-direction: column;
-  }
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -351,7 +354,7 @@ footer .footer-copyright {
   /* arrange the contact list items in a column instead of a row */
   header ul,
   main .page-section,
-  main .contact ul {
+  main .contact .contact-list {
     flex-direction: column;
   }
 
@@ -377,7 +380,7 @@ footer .footer-copyright {
     margin-bottom: 10px;
   }
 
-  main .left-panel h2 {
+  main .left-panel .section-title {
     text-align: center;
   }
 
